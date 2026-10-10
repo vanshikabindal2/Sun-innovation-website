@@ -1,0 +1,154 @@
+/* =================================
+   STATS SECTION
+================================= */
+
+.stats-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 55px 0;
+}
+
+
+/* =================================
+   CONTAINER
+================================= */
+
+.stats-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+  text-align: center;
+}
+
+
+/* =================================
+   EACH STAT
+================================= */
+
+.stat-item {
+  padding: 10px 30px;
+}
+
+
+/* =================================
+   NUMBER
+================================= */
+
+.stat-number {
+  font-size: 48px;
+  line-height: 1;
+
+  font-weight: 800;
+
+  color: #2868e8;
+
+  margin-bottom: 12px;
+}
+
+
+/* PLUS SIGN */
+
+.stat-number span {
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #111827;
+
+  margin-left: 3px;
+
+  vertical-align: top;
+  position: relative;
+  top: 3px;
+}
+
+
+/* =================================
+   TITLE
+================================= */
+
+.stat-item h3 {
+  margin: 0 0 6px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  color: #344054;
+}
+
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+.stat-item p {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  color: #53657b;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 768px) {
+
+  .stats-section {
+    padding: 45px 0;
+  }
+
+  .stats-container {
+    width: 92%;
+
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .stat-item {
+    padding: 0;
+  }
+
+  .stat-number {
+    font-size: 44px;
+  }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+  .stats-section {
+    padding: 40px 0;
+  }
+
+  .stats-container {
+    gap: 30px;
+  }
+
+  .stat-number {
+    font-size: 40px;
+  }
+
+  .stat-item h3 {
+    font-size: 16px;
+  }
+
+  .stat-item p {
+    font-size: 12px;
+  }
+
+}

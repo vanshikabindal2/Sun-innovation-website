@@ -1,0 +1,553 @@
+/* =========================================
+   HOME HERO
+========================================= */
+
+.home-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  overflow: hidden;
+  /* background: #071a4d; */
+  background:     #376eb5;
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   BACKGROUND IMAGE
+========================================= */
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.8s ease-in-out;
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   BLUE OVERLAY
+========================================= */
+
+.hero-blue-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 20, 65, 0.92) 0%,
+      rgba(5, 27, 78, 0.82) 45%,
+      rgba(5, 27, 78, 0.72) 100%
+    );
+}
+
+
+/* =========================================
+   ORANGE CIRCLE
+========================================= */
+
+.orange-circle {
+  position: absolute;
+  z-index: 2;
+
+  width: 650px;
+  height: 650px;
+
+  /* background: linear-gradient(
+    135deg,
+    #ff4d36 0%,
+    #ff7a21 55%,
+    #ff9d19 100%
+  ); */
+background: 
+    #c49352  100%
+  ;
+
+  border-radius: 50%;
+
+  top: -390px;
+  left: -150px;
+
+  opacity: 0.98;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.hero-content {
+  position: relative;
+  z-index: 4;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 80px 60px;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   SMALL TITLE
+========================================= */
+
+.hero-small-title {
+  margin: 0 0 22px;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   MAIN TITLE
+========================================= */
+
+.hero-title {
+  margin: 0;
+
+  max-width: 720px;
+
+  font-size: clamp(48px, 5vw, 78px);
+  line-height: 1.08;
+
+  font-weight: 800;
+  letter-spacing: -2px;
+
+  color: #ffffff;
+}
+
+.hero-title span {
+  color: transparent;
+
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+  max-width: 620px;
+
+  margin-top: 30px;
+  margin-bottom: 38px;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  font-weight: 500;
+
+  color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+
+.hero-buttons button {
+  border: none;
+  outline: none;
+
+  min-width: 185px;
+  height: 55px;
+
+  padding: 0 25px;
+
+  border-radius: 40px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Orange Button */
+
+.about-btn {
+  color: #ffffff;
+
+  background: linear-gradient(
+    90deg,
+    #376eb5,
+    #c49352
+  );
+
+}
+
+.about-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(255, 65, 40, 0.35);
+}
+
+
+/* White Button */
+
+.service-btn {
+  color: #1d2438;
+
+  background: #ffffff;
+}
+
+.service-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.slider-arrows {
+  position: absolute;
+  z-index: 5;
+
+  right: 35px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.slider-arrow {
+  width: 70px;
+  height: 70px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #ff572d;
+
+  font-size: 34px;
+  font-weight: 300;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+
+.slider-arrow:hover {
+  background:    #c49352;
+  color: #ffffff;
+
+  transform: scale(1.08);
+}
+
+
+/* =========================================
+   DOTS
+========================================= */
+
+.slider-dots {
+  position: absolute;
+  z-index: 5;
+
+  bottom: 35px;
+  left: 60px;
+
+  display: flex;
+  gap: 9px;
+}
+
+
+.slider-dot {
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.slider-dot.active {
+  width: 30px;
+
+  border-radius: 20px;
+
+  background: #ff5b2d;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .home-hero {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    padding: 70px 45px;
+  }
+
+  .hero-title {
+    font-size: 58px;
+  }
+
+  .hero-description {
+    max-width: 540px;
+  }
+
+  .orange-circle {
+    width: 520px;
+    height: 520px;
+
+    top: -330px;
+    left: -180px;
+  }
+
+  .slider-arrows {
+    right: 22px;
+  }
+
+  .slider-arrow {
+    width: 58px;
+    height: 58px;
+
+    font-size: 28px;
+  }
+
+  .slider-dots {
+    left: 45px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .home-hero {
+    height: 100svh;
+    min-height: 650px;
+  }
+
+  .hero-content {
+    padding: 80px 28px 100px;
+  }
+
+  .hero-small-title {
+    font-size: 13px;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+  }
+
+  .hero-title {
+    max-width: 90%;
+
+    font-size: 43px;
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-title span {
+    -webkit-text-stroke: 1.5px #ffffff;
+  }
+
+  .hero-description {
+    max-width: 90%;
+
+    margin-top: 25px;
+    margin-bottom: 28px;
+
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .hero-buttons button {
+    min-width: 150px;
+    height: 48px;
+
+    padding: 0 18px;
+
+    font-size: 12px;
+  }
+
+  .orange-circle {
+    width: 420px;
+    height: 420px;
+
+    top: -285px;
+    left: -180px;
+  }
+
+  .slider-arrows {
+    right: 15px;
+    top: auto;
+    bottom: 80px;
+
+    transform: none;
+
+    flex-direction: row;
+  }
+
+  .slider-arrow {
+    width: 48px;
+    height: 48px;
+
+    font-size: 23px;
+  }
+
+  .slider-dots {
+    left: 28px;
+    bottom: 30px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero-content {
+    padding: 70px 22px 100px;
+  }
+
+  .hero-small-title {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+
+  .hero-title {
+    font-size: 37px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    max-width: 95%;
+  }
+
+  .hero-buttons {
+    gap: 10px;
+  }
+
+  .hero-buttons button {
+    min-width: 140px;
+    height: 45px;
+  }
+
+  .orange-circle {
+    width: 350px;
+    height: 350px;
+
+    top: -245px;
+    left: -165px;
+  }
+
+  .slider-arrow {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+
+/* =========================================
+   TEXT SLIDE-IN ANIMATION
+========================================= */
+
+@keyframes textFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Small Title */
+
+.hero-content .hero-small-title {
+  animation: textFromTop 0.7s ease-out 0.1s both;
+}
+
+
+/* Main Heading */
+
+.hero-content .hero-title {
+  animation: textFromTop 0.8s ease-out 0.3s both;
+}
+
+
+/* Description */
+
+.hero-content .hero-description {
+  animation: textFromTop 0.8s ease-out 0.5s both;
+}
+
+
+/* Buttons */
+
+.hero-content .hero-buttons {
+  animation: textFromTop 0.8s ease-out 0.7s both;
+}

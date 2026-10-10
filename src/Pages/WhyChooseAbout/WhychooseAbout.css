@@ -1,0 +1,546 @@
+/* =========================================
+   WHY CHOOSE US - UNIQUE CLASSES
+========================================= */
+
+.wcu2-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  padding: 85px 0 70px;
+
+  background: #376eb5;
+}
+
+
+/* =========================================
+   MAIN WRAPPER
+========================================= */
+
+.wcu2-wrapper {
+  position: relative;
+  z-index: 5;
+
+  width: 88%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.wcu2-heading {
+  text-align: center;
+
+  color: #ffffff;
+
+  margin-bottom: 48px;
+
+  animation: wcu2FadeDown 0.9s ease both;
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.wcu2-badge {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 10px 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(8px);
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 27px;
+
+  animation: wcu2Badge 1s ease both;
+}
+
+
+/* =========================================
+   DOT
+========================================= */
+
+.wcu2-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background:  #c49352;
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+
+  animation: wcu2Pulse 2s ease-in-out infinite;
+}
+
+
+/* =========================================
+   MAIN TITLE
+========================================= */
+
+.wcu2-heading h2 {
+  margin: 0;
+
+  font-size: 32px;
+
+  line-height: 1.3;
+
+  font-weight: 500;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   CARDS GRID
+========================================= */
+
+.wcu2-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.wcu2-card {
+  padding: 30px 28px;
+
+  min-height: 255px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.20),
+    rgba(255, 255, 255, 0.07)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.27);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.15);
+
+  backdrop-filter: blur(12px);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease,
+    border-color 0.4s ease;
+
+  /* ENTRY ANIMATION */
+  opacity: 0;
+  animation: wcu2CardIn 0.8s ease forwards;
+}
+
+
+/* Stagger effect */
+
+.wcu2-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.wcu2-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.wcu2-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.wcu2-card:hover {
+  transform: translateY(-10px);
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.28),
+    rgba(255, 255, 255, 0.10)
+  );
+
+  border-color: rgba(255, 255, 255, 0.5);
+
+  box-shadow:
+    0 22px 45px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================
+   ICON BOX
+========================================= */
+
+.wcu2-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  border-radius: 12px;
+
+ background-color: #c49352;
+
+  border: 1px solid rgba(255, 255, 255, 0.30);
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.12);
+
+  margin-bottom: 22px;
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease;
+}
+
+
+/* Icon hover */
+
+.wcu2-card:hover .wcu2-icon {
+  transform: translateY(-4px) rotate(-3deg);
+
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.wcu2-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  transition: transform 0.3s ease;
+}
+
+
+.wcu2-card:hover h3 {
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.wcu2-divider {
+  width: 80px;
+
+  height: 2px;
+
+  margin: 18px 0 20px;
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  transition:
+    width 0.4s ease,
+    background 0.4s ease;
+}
+
+
+.wcu2-card:hover .wcu2-divider {
+  width: 110px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.wcu2-card p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  transition: transform 0.3s ease;
+}
+
+
+.wcu2-card:hover p {
+  transform: translateX(2px);
+}
+
+
+/* =========================================
+   DECORATIVE CIRCLE LEFT
+========================================= */
+
+.wcu2-circle-left {
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  left: -280px;
+  top: -270px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  pointer-events: none;
+
+  animation: wcu2CircleFloat 8s ease-in-out infinite;
+}
+
+
+/* =========================================
+   DECORATIVE CIRCLE RIGHT
+========================================= */
+
+.wcu2-circle-right {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -310px;
+  bottom: -330px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  pointer-events: none;
+
+  animation: wcu2CircleFloat 10s ease-in-out infinite reverse;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+
+/* Heading */
+
+@keyframes wcu2FadeDown {
+
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* Badge */
+
+@keyframes wcu2Badge {
+
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+
+/* Dot */
+
+@keyframes wcu2Pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.4);
+    opacity: 0.65;
+  }
+
+}
+
+
+/* Cards */
+
+@keyframes wcu2CardIn {
+
+  from {
+    opacity: 0;
+
+    transform: translateY(45px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+
+}
+
+
+/* Decorative circles */
+
+@keyframes wcu2CircleFloat {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(15px, -15px);
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .wcu2-section {
+    padding: 70px 0 60px;
+  }
+
+  .wcu2-wrapper {
+    width: 90%;
+  }
+
+  .wcu2-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .wcu2-card {
+    min-height: auto;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .wcu2-section {
+    padding: 55px 0 50px;
+  }
+
+  .wcu2-wrapper {
+    width: 90%;
+  }
+
+  .wcu2-heading {
+    margin-bottom: 35px;
+  }
+
+  .wcu2-badge {
+    font-size: 12px;
+
+    padding: 9px 17px;
+  }
+
+  .wcu2-heading h2 {
+    font-size: 24px;
+  }
+
+  .wcu2-heading h2 br {
+    display: none;
+  }
+
+  .wcu2-card {
+    padding: 25px 22px;
+
+    border-radius: 16px;
+  }
+
+  .wcu2-card h3 {
+    font-size: 17px;
+  }
+
+  .wcu2-card p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================
+   REDUCE MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .wcu2-card,
+  .wcu2-heading,
+  .wcu2-badge,
+  .wcu2-dot,
+  .wcu2-circle-left,
+  .wcu2-circle-right {
+    animation: none;
+    opacity: 1;
+  }
+
+  .wcu2-card {
+    transform: none;
+  }
+
+}

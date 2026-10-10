@@ -1,0 +1,594 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 45px 30px 0;
+  background:
+    radial-gradient(
+      circle at 75% 15%,
+      rgba(35, 71, 170, 0.35),
+      transparent 35%
+    ),
+     linear-gradient(
+    90deg,
+    #376eb5,
+    #c49352
+  );
+
+
+  overflow: hidden;
+}
+
+
+/* subtle background pattern */
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      120deg,
+      transparent 49%,
+      rgba(255,255,255,0.035) 50%,
+      transparent 51%
+    );
+
+  background-size: 90px 90px;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   TOP HEADING
+========================= */
+
+.footer-top {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1425px;
+  margin: 0 auto 28px;
+}
+
+.footer-top h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 45px;
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* arrow */
+
+.footer-arrow {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  border: 2px solid rgba(255,255,255,0.25);
+
+  background: rgba(255,255,255,0.02);
+
+  color: white;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.footer-arrow:hover {
+  background: #1769ff;
+  border-color: #1769ff;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================
+   FOOTER CARD
+========================= */
+
+.footer-card {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1455px;
+
+  margin: auto;
+
+  background: #ffffff;
+
+  border-radius: 17px;
+
+  padding: 38px 38px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.35fr
+    1.05fr
+    1.15fr
+    1.15fr;
+
+  gap: 35px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.18);
+}
+
+
+/* =========================
+   COMPANY
+========================= */
+
+.footer-company {
+  padding-right: 20px;
+}
+
+.footer-logo {
+  width: 190px;
+  height: auto;
+
+  object-fit: contain;
+
+  margin-bottom: 20px;
+}
+
+.footer-company p {
+  color: #18202d;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  margin: 0;
+}
+
+.read-more {
+  display: inline-block;
+
+  margin-top: 4px;
+
+  color: #ff3030;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+.social {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #1769ff;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  transition: all 0.3s ease;
+}
+
+.social:hover {
+  transform: translateY(-5px) scale(1.05);
+
+  background: #ff3030;
+
+  box-shadow:
+    0 8px 20px rgba(23,105,255,0.3);
+}
+
+
+/* =========================
+   COLUMNS
+========================= */
+
+.footer-column {
+  border-left: 1px solid #bdbdbd;
+
+  padding-left: 25px;
+}
+
+.footer-column h3 {
+  position: relative;
+
+  margin: 2px 0 25px;
+
+  padding-left: 15px;
+
+  color: #26344b;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+/* red line */
+
+.footer-column h3::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 4px;
+  height: 20px;
+
+  background: #ff3030;
+
+  border-radius: 2px;
+}
+
+
+/* links */
+
+.footer-column ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 15px;
+
+  position: relative;
+
+  padding-left: 18px;
+}
+
+.footer-column li::before {
+  content: "▶";
+
+  position: absolute;
+
+  left: 0;
+  top: 1px;
+
+  font-size: 9px;
+
+  color: #ff3030;
+}
+
+.footer-column a {
+  color: #5a6575;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #1769ff;
+
+  padding-left: 4px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  margin-bottom: 17px;
+}
+
+.contact-icon {
+  min-width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #1769ff;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+}
+
+.contact-item p {
+  margin: 3px 0 0;
+
+  color: #5a6575;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1455px;
+
+  margin: 0 auto;
+
+  padding: 20px 10px;
+
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp {
+  position: fixed;
+
+  z-index: 1000;
+
+  right: 25px;
+  bottom: 18px;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  background: #20d366;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.25);
+
+  transition: all 0.3s ease;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+
+  box-shadow:
+    0 10px 30px rgba(32,211,102,0.4);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .footer-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-company {
+    padding-right: 0;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .footer {
+    padding: 35px 15px 0;
+  }
+
+  .footer-top h2 {
+    font-size: 30px;
+  }
+
+  .footer-arrow {
+    width: 48px;
+    height: 48px;
+
+    font-size: 25px;
+  }
+
+  .footer-card {
+    grid-template-columns: 1fr;
+
+    padding: 30px 22px;
+
+    gap: 25px;
+  }
+
+  .footer-column {
+    border-left: none;
+
+    border-top: 1px solid #ddd;
+
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .footer-company {
+    padding-right: 0;
+  }
+
+  .footer-logo {
+    width: 170px;
+  }
+
+  .whatsapp {
+    width: 50px;
+    height: 50px;
+
+    right: 15px;
+    bottom: 15px;
+
+    font-size: 24px;
+  }
+
+}
+
+
+
+
+/* =====================================
+   SOCIAL LINKS - PROFESSIONAL DESIGN
+===================================== */
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+/* SOCIAL ICON LINKS */
+
+.social-links a {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f4f7fb;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+
+  text-decoration: none;
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ICON IMAGES */
+
+.social-links a img {
+  width: 22px;
+  height: 22px;
+
+  object-fit: contain;
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.social-links a:hover {
+
+  border-color: #376eb5;
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 18px rgba(55, 110, 181, 0.25);
+}
+
+.social-links a:hover img {
+  transform: scale(1.12);
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.social-links a:focus-visible {
+  outline: 3px solid #c49352;
+  outline-offset: 4px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 576px) {
+  .social-links {
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .social-links a {
+    width: 42px;
+    height: 42px;
+  }
+
+  .social-links a img {
+    width: 20px;
+    height: 20px;
+  }
+}

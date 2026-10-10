@@ -1,0 +1,947 @@
+
+/* =========================================
+   ABOUT BANNER
+========================================= */
+
+.about-banner {
+  width: 100%;
+  height: 320px;
+  
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.about-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(8, 20, 45, 0.18);
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .about-banner {
+    height: 380px;
+
+    background-position: center center;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .about-banner {
+    height: 330px;
+
+    background-position: center center;
+  }
+
+  .about-overlay {
+    background: rgba(8, 20, 45, 0.15);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .about-banner {
+    height: 270px;
+
+    background-position: center center;
+  }
+
+  .about-overlay {
+    background: rgba(8, 20, 45, 0.12);
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .about-banner {
+    height: 220px;
+
+    background-position: center center;
+  }
+
+  .about-overlay {
+    background: rgba(8, 20, 45, 0.10);
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+  .about-banner {
+    height: 190px;
+  }
+
+}
+
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.about-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 72px 0 65px;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.about-container {
+  width: 88%;
+  max-width: 1340px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+
+  align-items: center;
+  gap: 55px;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.about-content {
+  padding-left: 0;
+}
+
+
+/* =========================================================
+   SMALL LABEL
+========================================================= */
+
+.about-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.about-label span {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  color: #1877f2;
+  white-space: nowrap;
+}
+
+.label-line {
+  width: 150px;
+  height: 2px;
+
+  background: #f5b51b;
+
+  position: relative;
+}
+
+.label-line::after {
+  content: "";
+
+  position: absolute;
+
+  right: -2px;
+  top: 50%;
+
+  width: 8px;
+  height: 8px;
+
+  transform: translateY(-50%);
+
+  background: #f5b51b;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.about-title {
+  margin: 0;
+
+  max-width: 720px;
+
+  color: #10264b;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 4vw, 62px);
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -2px;
+}
+
+.about-title span {
+  color: #f5b51b;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-description {
+  max-width: 650px;
+
+  margin: 25px 0 32px;
+
+  color: #718096;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 15.5px;
+
+  line-height: 1.9;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   BOTTOM AREA
+========================================================= */
+
+.about-bottom {
+  display: flex;
+  align-items: center;
+
+  gap: 38px;
+}
+
+
+/* =========================================================
+   STORY BUTTON
+========================================================= */
+
+.story-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  min-width: 165px;
+  height: 52px;
+
+  border: none;
+  border-radius: 28px;
+
+  background: #fbc331;
+
+  color: #10264b;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 8px 22px rgba(251, 195, 49, 0.22);
+}
+
+.story-btn svg {
+  width: 18px;
+  height: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.story-btn:hover {
+  background: #10264b;
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(16, 38, 75, 0.18);
+}
+
+.story-btn:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.about-features {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.feature-icon {
+  color: #f5b51b;
+
+  font-size: 27px;
+
+  min-width: 28px;
+}
+
+.feature-item div {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.3;
+}
+
+.feature-item strong {
+  color: #26364f;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.feature-item span {
+  color: #6f7d91;
+
+  font-size: 13px;
+}
+
+.feature-divider {
+  width: 1px;
+  height: 40px;
+
+  background: #d9dee6;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.about-image-area {
+  position: relative;
+
+  min-height: 430px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   IMAGE WRAPPER
+========================================================= */
+
+.image-wrapper {
+  position: relative;
+
+  width: 94%;
+  height: 400px;
+
+  z-index: 2;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 20px 50px rgba(16, 38, 75, 0.13);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================================
+   YELLOW DECORATIVE SHAPES
+========================================================= */
+
+.yellow-shape {
+  position: absolute;
+
+  background: #fbc331;
+
+  border-radius: 17px;
+
+  z-index: 1;
+}
+
+
+/* Top yellow box */
+
+.top-shape {
+  width: 100px;
+  height: 100px;
+
+  top: 5px;
+  left: 0;
+}
+
+
+/* Bottom yellow box */
+
+.bottom-shape {
+  width: 110px;
+  height: 110px;
+
+  right: 0;
+  bottom: 5px;
+}
+
+
+/* =========================================================
+   LARGE LAPTOP / DESKTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .about-section {
+    padding: 65px 0;
+  }
+
+  .about-container {
+    width: 90%;
+    gap: 40px;
+  }
+
+  .about-title {
+    font-size: 52px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
+
+  .about-image-area {
+    min-height: 400px;
+  }
+
+  .image-wrapper {
+    width: 94%;
+    height: 370px;
+  }
+
+  .about-bottom {
+    gap: 28px;
+  }
+
+  .about-features {
+    gap: 18px;
+  }
+
+  .feature-item strong {
+    font-size: 13px;
+  }
+
+  .feature-item span {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-section {
+    padding: 65px 0;
+  }
+
+  .about-container {
+    width: 88%;
+
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .about-content {
+    padding-left: 0;
+  }
+
+  .about-title {
+    max-width: 700px;
+
+    font-size: 48px;
+  }
+
+  .about-description {
+    max-width: 700px;
+  }
+
+  .about-image-area {
+    min-height: 420px;
+  }
+
+  .image-wrapper {
+    width: 90%;
+    height: 400px;
+  }
+
+  .top-shape {
+    left: 2%;
+  }
+
+  .bottom-shape {
+    right: 2%;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-section {
+    padding: 55px 0;
+  }
+
+  .about-container {
+    width: 88%;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  /* Label */
+
+  .about-label {
+    gap: 10px;
+
+    margin-bottom: 16px;
+  }
+
+  .about-label span {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+  }
+
+  .label-line {
+    width: 65px;
+  }
+
+  .label-line::after {
+    width: 7px;
+    height: 7px;
+  }
+
+
+  /* Heading */
+
+  .about-title {
+    font-size: 37px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+  }
+
+
+  /* Description */
+
+  .about-description {
+    margin: 20px 0 28px;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+
+  /* Bottom */
+
+  .about-bottom {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 28px;
+  }
+
+
+  /* Features */
+
+  .about-features {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .feature-divider {
+    display: none;
+  }
+
+
+  /* Image */
+
+  .about-image-area {
+    min-height: 340px;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: 320px;
+
+    border-radius: 16px;
+  }
+
+
+  /* Yellow Shapes */
+
+  .top-shape {
+    width: 65px;
+    height: 65px;
+
+    top: 0;
+    left: -3px;
+
+    border-radius: 13px;
+  }
+
+  .bottom-shape {
+    width: 75px;
+    height: 75px;
+
+    right: -3px;
+    bottom: 0;
+
+    border-radius: 13px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .about-section {
+    padding: 45px 0;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-description {
+    font-size: 13.5px;
+  }
+
+  .image-wrapper {
+    height: 280px;
+  }
+
+  .about-image-area {
+    min-height: 300px;
+  }
+}
+
+
+/* =================================
+   MISSION & VISION SECTION
+================================= */
+
+.mission-vision-section {
+  width: 100%;
+  padding: 60px 0;
+
+  /* BLUE → GOLD BACKGROUND */
+  background: linear-gradient(
+    90deg,
+     #c49352,
+    #376eb5
+    
+  );
+}
+
+
+/* =================================
+   CONTAINER
+================================= */
+
+.mission-vision-container {
+  width: 86%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+
+/* =================================
+   WHITE CARD
+================================= */
+
+.info-card {
+  background: #ffffff;
+
+  border: 1px solid #e1e8f5;
+  border-radius: 24px;
+
+  padding: 40px;
+
+  min-height: 300px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.10);
+
+  transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.info-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =================================
+   CARD HEADING
+================================= */
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =================================
+   ICON
+================================= */
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #376eb5,
+    #c49352
+  );
+}
+
+
+/* =================================
+   TITLE
+================================= */
+
+.card-heading h2 {
+  margin: 0;
+
+  color: #263b58;
+
+  font-size: 23px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+/* =================================
+   TITLE LINE
+================================= */
+
+.heading-line {
+  width: 80px;
+  height: 4px;
+
+  margin-top: 10px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #376eb5,
+    #c49352
+  );
+}
+
+
+/* =================================
+   PARAGRAPH
+================================= */
+
+.info-card p {
+  margin: 0;
+
+  color: #53657b;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  letter-spacing: 0.2px;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+  .mission-vision-container {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .info-card {
+    padding: 32px;
+  }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+  .mission-vision-section {
+    padding: 40px 0;
+  }
+
+  .mission-vision-container {
+    width: 92%;
+  }
+
+  .info-card {
+    padding: 25px;
+
+    border-radius: 18px;
+  }
+
+  .card-heading {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .icon-box {
+    width: 44px;
+    height: 44px;
+  }
+
+  .card-heading h2 {
+    font-size: 20px;
+  }
+
+  .info-card p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+}

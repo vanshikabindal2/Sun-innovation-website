@@ -1,0 +1,308 @@
+/* =========================================================
+   APPLY MODAL OVERLAY
+========================================================= */
+
+.apply-overlay {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 99999;
+
+  backdrop-filter: blur(2px);
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.apply-modal {
+  width: 100%;
+  max-width: 500px;
+
+  max-height: 95vh;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  overflow-y: auto;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+
+  animation: applyModalOpen 0.25s ease;
+}
+
+
+/* =========================================================
+   OPEN ANIMATION
+========================================================= */
+
+@keyframes applyModalOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.apply-header {
+  height: 72px;
+
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.apply-header h2 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #252525;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.apply-close {
+  border: none;
+  background: transparent;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 34px;
+  font-weight: 300;
+
+  color: #777;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.apply-close:hover {
+  color: #222;
+  transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.apply-form {
+  padding: 26px 24px 24px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #333;
+}
+
+.form-group label span {
+  color: #376eb5;
+}
+
+
+/* =========================================================
+   INPUT / SELECT / TEXTAREA
+========================================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #333;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+
+/* INPUT */
+
+.form-group input,
+.form-group select {
+  height: 44px;
+
+  padding: 0 14px;
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea {
+  min-height: 85px;
+
+  padding: 13px 14px;
+
+  resize: vertical;
+}
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+
+/* FOCUS */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #376eb5;
+
+  box-shadow: 0 0 0 3px rgba(55, 110, 181, 0.08);
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.submit-application {
+  width: 100%;
+
+  height: 46px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: linear-gradient(
+    90deg,
+    #587bbd,
+    #e4aa35
+  );
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 6px 18px rgba(55, 110, 181, 0.2);
+
+  transition: 0.25s ease;
+}
+
+.submit-application:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 9px 22px rgba(55, 110, 181, 0.25);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .apply-overlay {
+    padding: 12px;
+  }
+
+  .apply-modal {
+    max-width: 100%;
+
+    max-height: 94vh;
+
+    border-radius: 14px;
+  }
+
+  .apply-header {
+    height: 64px;
+
+    padding: 0 18px;
+  }
+
+  .apply-header h2 {
+    font-size: 19px;
+  }
+
+  .apply-form {
+    padding: 20px 18px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 43px;
+  }
+}
